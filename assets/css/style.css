@@ -1,0 +1,50 @@
+/*Google Fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Luckiest+Guy&display=swap');
+
+/*General Styles*/
+:root {
+    --primary-font: "Luckiest Guy", cursive;
+    --secondary-font: "Lilita One", cursive;
+    --primary-color: #6d3708; /* Brown */
+    --secondary-color: #800017; /* Burgundy */
+    --background-color: #ffcc00; /* Yellow */
+    --highlight-color: #feffcc; /* Light Yellow */
+    --title-color: #000000; /* Black */
+}
+
+/*global styles*/
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--title-color);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Navbar styling*/
+#navbar {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: var(--highlight-color);
+    font-family: var(--primary-font);
+    font-size: 30px;
+    align-items: end;
+    display: flex;
+    min-width: 100%;
+    top: 0;
+    margin: 0;
+}
+
+.nav-container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-active {
+    color: var(--secondary-color);
+}
