@@ -22,6 +22,15 @@ body{
     padding: 0;
 }
 
+h1,
+h2 {
+    text-align: center;
+    text-shadow: #000000 2px 2px 4px; /* Black shadow for text */
+    padding: 5px;
+    color: var(--primary-color);
+    outline: 2px solid var(--title-color);
+    font-family: var(--secondary-font);
+}
 
 
 /*Navbar styling*/
@@ -30,7 +39,7 @@ body{
     color: var(--primary-color);
     border: var(--highlight-color);
     font-family: var(--primary-font);
-    font-size: 30px;
+    font-size: 50px;
     align-items: end;
     display: flex;
     min-width: 100%;
