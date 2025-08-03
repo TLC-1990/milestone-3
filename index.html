@@ -19,51 +19,95 @@
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="d-flex flex-column min-vh-100 mt-auto">
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand navbar-name" href="index.html">
+        <img class="logo" src="assets/images/apple-touch-icon.webp" alt="3D hotdog graphic logo">
+        The Wurst of Times
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menus and Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Book Your Table!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <header>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand navbar-name" href="index.html"> 
-          <img class="logo" src="assets/images/apple-touch-icon.webp" alt="3D hotdog graphic logo">
-          The Wurst of Times
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Menus and Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Book Your Table!</a>
-            </li>
-          </ul>
+    <div class="container">
+      <h1 class="display-1">The Wurst of Times</h1>
+      <h2 class="display-4">We do what we love with relish</h2>
+    </div>
+  </header>
+  <main>
+    <section class="hero bg-light">
+      <div class="container text-center introduction">
+        <div class="row">
+          <div class="col col-md-6">
+            <h3 class="display-5">Who are we?</h3>
+            <p>Welcome to The Wurst of Times, a restaurant that's as heavy on the puns as it is with the mustard!<br>
+              <hr>
+              We are a team of food enthusiasts, who believe that dining should be an experience filled with laughter
+              and joy.<br>
+              <hr>
+              <strong><u> Our mission </strong></u> is to serve you the best hotdogs in town, presented with a sizzling
+              side of humor and a dollop of fun.</p>
+          </div>
+          <div class="col col-md-6">
+            <img src="assets/images/hero-image-pexels-polina-tankilevitch.webp"
+              alt="Three gourmet hotdogs with a range of delicious toppings" class="img-fluid">
+          </div>
+        </div>
+    </section>
+    <section class="hero bg-light">
+      <div class="container text-center introduction">
+        <div class="row">
+          <div class="col col-md-6">
+            <img src="assets/images/hero-image-pexels-polina-tankilevitch.webp"
+              alt="Three gourmet hotdogs with a range of delicious toppings" class="img-fluid">
+          </div>
+          <div class="col col-md-6">
+            <h3 class="display-5">Why we're best when we're at our wurst!</h3>
+            <p>At The Wurst of Times, we use the finest, imported bratwurst sausages as well as our special recipe
+              creations, which change weekly!<br>
+              <hr>
+              Our chefs are dedicated to crafting the most delicious hotdogs, using only the freshest ingredients and
+              the most creative toppings.<br>
+              <hr>
+              We believe that every bite should be a burst of flavor and every meal should be a celebration.
+            </p>
+          </div>
         </div>
       </div>
-    </nav>
-      <h1 class="display-1">The Wurst of Times</h1>
-    <h2 class="display-4">We do what we love with relish</h2>
-  </header>
-<main>
+    </section>
+  </main>
 
-</main>
-<footer id="contact" class="bg-light text-dark mt-auto">
+  <footer id="contact" class="bg-light text-dark mt-auto">
     <div class="container text-center py-4">
-        <p></p>
-        <p>Follow us on:
+      <p></p>
+      <p>Follow us on:
         <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-        </p>
+      </p>
     </div>
+  </footer>
 
-</footer>
- <!-- Bootstrap JS -->
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
   </script>
@@ -71,7 +115,7 @@
   <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
   <!--JavaScript script link-->
   <script src="assets/js/script.js"></script>
-    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+  <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
   <script>
     document
       .querySelectorAll(".navbar-collapse .nav-link")
@@ -91,5 +135,5 @@
           }
         });
       });
-    </script>
+  </script>
 </body>
