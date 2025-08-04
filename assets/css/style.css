@@ -93,12 +93,16 @@ h3 {
     text-shadow: var(--highlight-color) 2px 2px 4px;
 }
 
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
 .introduction {
     align-items: flex-start;
     text-align: center;
     padding: 20px;
     font-family: var(--secondary-font);
-    font-size: 3vw;
     color: var(--title-color);
     outline-offset: 10px;
 }
@@ -125,4 +129,49 @@ footer {
     font-family: var(--primary-font);
     font-size: 20px;
     margin: auto;
+}
+
+
+/*Media Queries*/
+/*Small devices (phones, 576px and smaller) */
+@media screen and (max-width: 767px) {
+    .introduction {
+        font-size: 3vw;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+    .introduction {
+        font-size: 3vw;
+    }
+
+}
+
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+    .introduction {
+        font-size: 3vw;
+    }
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+
+    .introduction {
+        font-size: 2.5vw;
+    }
+}
+
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+
+    .introduction {
+        font-size: 2.5vw;
+    }
+
 }
