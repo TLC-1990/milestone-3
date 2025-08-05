@@ -35,7 +35,8 @@ main {
     min-width: 100%;
     position: relative;
     margin: 0;
-    padding-right: 0;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 h1,
@@ -118,13 +119,19 @@ h3 {
     min-height: 100%;
 }
 
-.menu {
-    min-width: 100%;
-    min-height: 80vh;
-    border: none;
+/*menu and reviews*/
+.table {
+    border: #800017 5px solid;
+    font-size: 3vw;
 }
 
+.review-image {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 75%;
+}
 
+/*footer across pages*/
 footer {
     position: bottom;
     bottom: 0;
