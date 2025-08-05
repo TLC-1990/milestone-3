@@ -51,18 +51,73 @@
         </div>
     </header>
     <main class="flex-grow-1">
-        <section class="hero bg-light">
-            <div class="container">
+        <section id="menu">
+            <div class="container-fluid menu" id="menu-container">
                 <div class="row">
-                    <div class="col">
-                        <iframe src="/assets/documents/daily-menu.pdf" type="application/pdf" class="menu"
-                            title="Embedded PDF viewer displaying daily menu"></iframe>
+                    <div class="col col-md-6 col-sm-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"> </th>
+                                    <th scope="col"> </th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="display-6">The Dogfather</th>
+                                    <td>The finest, imported bratwurst sausage from the foothills of the Bavarian Alps.
+                                        Topped with hot German mustard and organic ketchup. </td>
+                                    <td class="display-6"> £9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="display-6">Dog of the Week</th>
+                                    <td>See specials board for details or ask your server. </td>
+                                    <td class="display-6"> £11</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="display-6">Meat? Nah, dawg (v) </th>
+                                    <td> A mouth-watering tofudog, spiced and grilled to perfection with your choice of
+                                        toppings. </td>
+                                    <td class="display-6"> £7.50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col col-md-6 col-sm-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"> </th>
+                                    <th scope="col"> </th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="display-6">The Dogfather</th>
+                                    <td>The finest, imported bratwurst sausage from the foothills of the Bavarian Alps.
+                                        Topped with hot German mustard and organic ketchup. </td>
+                                    <td class="display-6"> £9</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="display-6">Dog of the Week</th>
+                                    <td>See specials board for details or ask your server. </td>
+                                    <td class="display-6"> £11</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="display-6">Meat? Nah, dawg (v) </th>
+                                    <td> A mouth-watering tofudog, spiced and grilled to perfection with your choice of
+                                        toppings. </td>
+                                    <td class="display-6"> £7.50</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-
     <footer id="contact" class="bg-light text-dark mt-auto">
         <div class="container text-center py-4">
             <p></p>
@@ -92,9 +147,11 @@
                     let section = document.querySelector(e.target.getAttribute("href"));
                     if (section) {
                         e.preventDefault(); // Prevent default anchor click behavior
-                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        let navbarHeight = document.querySelector(".navbar-toggler")
+                            .offsetHeight;
                         window.scroll({
-                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            top: section.offsetTop -
+                                navbarHeight, // Adjust for navbar height
                             behavior: "smooth",
                         });
                         document
