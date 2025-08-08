@@ -138,6 +138,11 @@ h3 {
     font-size: 2.5vw;
 }
 
+.menu-titles {
+    text-align: center;
+
+}
+
 /*footer across pages*/
 footer {
     position: bottom;
